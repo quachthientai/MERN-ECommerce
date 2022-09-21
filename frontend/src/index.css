@@ -1,0 +1,15 @@
+main{
+   min-height: 90vh;
+}
+
+/* header{
+   position: sticky;
+   top: 0;
+} */
+
+@media (max-width: 400px) {
+   .carousel-img{
+      width: 20px;
+      height: 20px;
+   }
+}
