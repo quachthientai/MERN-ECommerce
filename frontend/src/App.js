@@ -12,7 +12,7 @@ function App() {
     <>
       <Header/>
       <main>
-        <Container >
+        <Container  >
           <Jumbotron />
           <HomeScreen />
         </Container>

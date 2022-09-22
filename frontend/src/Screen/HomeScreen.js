@@ -21,14 +21,15 @@ const HomeScreen = () => {
 
   return (
     <>
-      <h1 className="text-center mx-2 py-3">Feature Products</h1>
+      <h1 className="text-center mx-2 py-4">Feature Products</h1>
       <Row>
         {featureArr.map(product => (
           <Col className="my-2" sm={12} md={6} lg={4}>
-            <Card>
-              <CardImg variant="top" src={product.image} style={{width:"280px", height:"180px", margin:"0 auto"}}/>
+            <Card className="rounded w-75 m-auto">
+              <span className="badge p-2 position-absolute top-0 start-0 bg-dark">{product.category}</span>
+              <CardImg variant="top" className="w-75 m-auto rounded thumbnail-image" src={product.image} />
               <Card.Body className="text-center">
-                <Card.Title className="text-center mx-auto" style={{height:"40px"}}>{product.name}</Card.Title>
+                <Card.Title className="text-center mx-auto d-flex align-items-center justify-content-center" style={{height:"40px"}}>{product.name}</Card.Title>
                 <Card.Text className="text-center fs-4">{`$${product.price}`}</Card.Text>
                 <Button variant="primary" style={{margin:"0 auto"}}>ADD TO CART</Button>
               </Card.Body>
