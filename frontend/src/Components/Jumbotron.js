@@ -19,7 +19,7 @@ const Jumbotron = () => {
                      <img
                            className="carousel-img img-fluid w-50 float-end"
                            style={{width: "400px", height: "600px"}}
-                           src={product.image}
+                           src={product.image[0]}
                            alt="First slide"
                         />
                         <div className="caption w-50 position-absolute top-50" style={{marginTop:"-100px"}}>

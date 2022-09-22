@@ -4,7 +4,7 @@ const products = [
          id: 'ep1',
          tagLine: 'Stay connected to the world you love',
          name: 'Powerbeats3 Wireless Earphones',
-         image: '/images/earphones/ep1.png',
+         image: ['/images/earphones/ep1.png','/images/earphones/ep1card.png'],
          description: [
                'In-Ear Stereo Headphones, connect via Class 1 Bluetooth with your device for wireless workout freedom.', 
                'Up to 12 hours battery life to power through multiple workouts.',
@@ -25,7 +25,7 @@ const products = [
          id: 'ep2',
          tagLine: 'True Wireless Noise Cancelling Earbuds',
          name: 'Beats Studio Buds',
-         image: '/images/earphones/ep2.png',
+         image: ['/images/earphones/ep2.png','/images/earphones/ep2card.png'],
          description: [
                'High-quality call performance and voice assistant interaction via built-in microphones.',
                'Control your sound with two distinct listening modes: Active Noise Cancelling (ANC) and Transparency mode.', 
@@ -46,7 +46,7 @@ const products = [
          id: 'ep3',
          tagLine: 'True Wireless Noise Cancelling Earbuds',
          name: 'Beats Fit Pro',
-         image: '/images/earphones/ep3.png',
+         image: ['/images/earphones/ep3.png','/images/earphones/ep3card.png'],
          description: [
                'For a comfortable, secure fit, gently twist earbud back and tuck wingtip into upper ear.',
                'Beats Fit Pro is equipped with comfortable, secure-fit wingtips that flex to fit your ear. The universal wingtip design was put to the ultimate test by athletes of all kinds so you can trust these earbuds will stay put through work days and workouts.', 
@@ -67,7 +67,7 @@ const products = [
          id: 'ep4',
          tagLine: 'True Wireless High-Performance Earbuds',
          name: 'PowerBeats Pro',
-         image: '/images/earphones/ep4.png',
+         image: ['/images/earphones/ep4.png','/images/earphones/ep4card.png'],
          description: [
                `Each earbud has full volume and track controls, so you don't need your device to adjust your music.`,
                'Powered by the Apple H1 headphone chip and with Class 1 Bluetooth® technology, these wireless earbuds offer extended range and fewer dropouts, so they stay connected as you keep moving.', 
@@ -90,7 +90,7 @@ const products = [
          id: 'hp1',
          tagLine: 'Feel the bass in your bones',
          name: 'Monster Beats Pro',
-         image: '/images/headphones/hp1.png',
+         image: ['/images/headphones/hp1.png','/images/headphones/hp1card.png'],
          description: [
                'Attention sound engineers, DJs, musicians, and hard core music lovers.', 
                'Beats Pro uses no amplification or noise cancellation circuitry that adds other frequencies and colors the sound, so you hear the bass, uncompromised. The sound is pure even at high volumes.',
@@ -111,7 +111,7 @@ const products = [
          id: 'hp2',
          tagLine: 'Dance your heart out to the beats',
          name: 'JBL Tune 510BT',
-         image: '/images/headphones/hp2.png',
+         image: ['/images/headphones/hp2.png','/images/headphones/hp2card.png'],
          description: [
                'Wirelessly stream high-quality sound from your smartphone without messy cords.',
                'It features the renowned JBL Pure Bass sound, which can be found in the most famous venues all around the world.', 
@@ -132,7 +132,7 @@ const products = [
          id: 'hp3',
          tagLine: 'True Wireless On-Ear Headphones',
          name: 'Beats Solo3 Wireless',
-         image: '/images/headphones/hp3.png',
+         image: ['/images/headphones/hp3.png','/images/headphones/hp3card.png'],
          description: [
                'Delivers premium playback with fine-tuned acoustics that maximize clarity breadth, and balance.',
                'Support Spatial Audio for immersive music, movies, and games - delivering a surround sound experience that you can take with you anywhere.', 
@@ -153,7 +153,7 @@ const products = [
          id: 'hp4',
          tagLine: 'True Wireless Noise Cancelling Over-Ear Headphones',
          name: 'Beats Studio3 Wireless',
-         image: '/images/headphones/hp4.png',
+         image: ['/images/headphones/hp4.png','/images/headphones/hp4card.png'],
          description: [
                'Are engineered for all-day comfort. The holistic design is lightweight, durable, and comfortable, so you can get lost in your music.',
                'The Apple W1 headphone chip brings seamless setup and switching for your Apple devices§, so you can easily move about, keep the music going, and stay productive all day.', 
@@ -174,7 +174,7 @@ const products = [
          id: 'hp5',
          tagLine: 'True Wireless Noise Cancelling Over-Ear Headphones',
          name: 'Beats Studio3 Wireless',
-         image: '/images/headphones/hp5.png',
+         image: ['/images/headphones/hp5.png','/images/headphones/hp5card.png'],
          description: [
                'Are engineered for all-day comfort. The holistic design is lightweight, durable, and comfortable, so you can get lost in your music.',
                'The Apple W1 headphone chip brings seamless setup and switching for your Apple devices§, so you can easily move about, keep the music going, and stay productive all day.', 
@@ -195,7 +195,7 @@ const products = [
          id: 'hp6',
          tagLine: 'Wake up and listen',
          name: 'JBL Everest 700',
-         image: '/images/headphones/hp6.png',
+         image: ['/images/headphones/hp6.png','/images/headphones/hp6card.png'],
          description: [
                'Best-in-class Ergonomics, designed to fit the unique contour of your ears',
                'Legendary JBL Pro Audio Sound, enjoy the same elevated experience and incredible sound JBL has been delivering to concert hall', 
@@ -218,7 +218,7 @@ const products = [
          id: 'sp1',
          tagLine: 'Sounds better than ever',
          name: 'JBL Flip 5 Eco Edition',
-         image: '/images/speakers/sp1.png',
+         image: ['/images/speakers/sp1.png','/images/speakers/sp1card.png'],
          description: [
                'The waterproof JBL Flip 5 Eco edition is made from 90% recycled plastic and has a eco-friendly packaging.', 
                'Feel your music. Flip 5 Eco edition all new racetrack-shaped driver delivers high output. Enjoy booming bass in a compact package.',
@@ -239,7 +239,7 @@ const products = [
          id: 'sp2',
          tagLine: 'Light up the night',
          name: 'JBL Pulse 3',
-         image: '/images/speakers/sp2.png',
+         image: ['/images/speakers/sp2.png','/images/speakers/sp2card.png'],
          description: [
                'The built-in rechargeable Li-ion battery provides up to 12 hours of playtime with music and light show.',
                'Wirelessly connect up to 2 smartphones or tablets and take turns playing music with exceptional 360° sound.', 
@@ -260,7 +260,7 @@ const products = [
          id: 'sp3',
          tagLine: 'Wireless Bluetooth® Streaming',
          name: 'JBL Go 2',
-         image: '/images/speakers/sp3.png',
+         image: ['/images/speakers/sp3.png','/images/speakers/sp3card.png'],
          description: [
                'Wirelessly stream high-quality sound from your smartphone or tablet.', 
                'Built-in, rechargeable Li-ion battery supports up to 5 hours of playtime.',
@@ -281,7 +281,7 @@ const products = [
          id: 'sp4',
          tagLine: 'Wireless Bluetooth® Streaming',
          name: 'JBL Clip 3',
-         image: '/images/speakers/sp4.png',
+         image: ['/images/speakers/sp4.png','/images/speakers/sp4card.png'],
          description: [
                'Wirelessly stream high-quality sound from your smartphone or tablet.', 
                'Built-in, rechargeable Li-ion battery supports up to 10 hours of playtime.',
@@ -299,20 +299,5 @@ const products = [
       },
    ]}
 ]
-
-const featureArr = []
-
-for(let i = 0; i < products.length; i++){
-   const category = products[i]
-   const key = Object.keys(category);
-
-   category[key].map(item => {
-      if(item.isFeatured){
-         featureArr.push(item)
-      }
-   })
-}
-
-console.log(featureArr);
 
 export default products
