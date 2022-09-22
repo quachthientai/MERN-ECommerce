@@ -1,43 +1,40 @@
 import React from 'react'
+import { useState } from 'react'
 import { Carousel, Button } from 'react-bootstrap'
 import products from '../dummyProduct.js'
 
+
 const Jumbotron = () => {
 
-   const randNum = Math.floor(Math.random() * products.length)
-   const randCategory = products[randNum];
-   const randKey = Object.keys(randCategory) 
-   const randObj = randCategory[randKey]
+   //get the random category to display the product on jumbotron 
+   const randCarouselCategory = products[Math.floor(Math.random() * products.length)]
+   const key = Object.keys(randCarouselCategory)
 
   return (
-    <Carousel variant="dark" bg="dark" interval={null} >
-      {randObj.map(product => {
-         const randNum = Math.floor(Math.random() * product.description.length)
-         return (
-            <Carousel.Item >
-               <div className="divflex d-block" style={{border:"green solid 1px"}}>
-                  <img
-                     className="w-100 mx-auto my-0" style={{height:"250px"}}
-                     src={product.image}
-                     alt="First slide"
-                  />
-                  
-                  <div className="w-100 m-auto" style={{border:"red solid 1px"}}>
-                        <div className="w-50 text-center m-auto" style={{border:"blue solid 1px"}}>
-                           <p className='fw-bold fs-5'>{product.name}</p>
-                           <p className='fs-6'>{product.tagLine}</p>
-                           <p className='mt-3'>{product.description[randNum]}</p>
-                           <Button variant="dark mt-3" style={{visibility: "hidden"}}>SHOP NOW</Button>
+       <Carousel variant="dark" bg="dark"  interval={2000} >
+         {randCarouselCategory[key].map(product => {
+            return (
+               <Carousel.Item>
+                  <div>
+                     <img
+                           className="carousel-img img-fluid w-50 float-end"
+                           style={{width: "400px", height: "600px"}}
+                           src={product.image}
+                           alt="First slide"
+                        />
+                        <div className="caption w-50 position-absolute top-50" style={{marginTop:"-100px"}}>
+                           <div className="w-75 m-auto float-end" >
+                              <h1 className=' carousel-name fw-bold'>{product.name}</h1>
+                              <h4>{product.tagLine}</h4>
+                              <p className='mt-3'>{product.description[0]}</p>
+                              <Button variant="dark mt-3">SHOP NOW</Button>
+                           </div>
                         </div>
                   </div>
-
-                  
-               </div>
-            </Carousel.Item>
-         )
-         
-      })}
-    </Carousel>
+               </Carousel.Item>
+            )
+         })}
+       </Carousel>
   )
 }
 

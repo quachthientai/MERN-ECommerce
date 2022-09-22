@@ -27,7 +27,7 @@ const Header = () => {
                   <Form.Control
                      size="sm" type="text" placeholder="Search" className="me-2"   
                   />
-                  <Button variant="dark" className="py-1"><i class="bi bi-search"></i></Button>
+                  <Button variant="dark" className="py-1"><i className="bi bi-search"></i></Button>
                </Form>
                <Nav className="ml-auto">
                   <Nav.Item className="m-auto">
@@ -44,10 +44,10 @@ const Header = () => {
       <Navbar bg="dark" className="py-0">
          <Container className="justify-content-center">
             <Nav className="m-auto d-flex justify-content-center"> 
-               <Nav.Link href="/home" className="text-light mx-2 py-3" >Home</Nav.Link>
-               <Nav.Link href="/home" className="text-light mx-2 py-3">About</Nav.Link>
-               <Nav.Link href="/home" className="text-light mx-2 py-3">Shop</Nav.Link>
-               <Nav.Link href="/home" className="text-light mx-2 py-3">Contact</Nav.Link>
+               <Nav.Link href="/home" className="text-light mx-2 py-3 fs-5">Home</Nav.Link>
+               <Nav.Link href="/home" className="text-light mx-2 py-3 fs-5">About</Nav.Link>
+               <Nav.Link href="/home" className="text-light mx-2 py-3 fs-5">Shop</Nav.Link>
+               <Nav.Link href="/home" className="text-light mx-2 py-3 fs-5">Contact</Nav.Link>
             </Nav>
          </Container>
       </Navbar>

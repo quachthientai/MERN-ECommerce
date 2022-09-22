@@ -2,7 +2,7 @@ const products = [
    {"Earphones": [
       {
          id: 'ep1',
-         tagLine: 'Stay connected to the world you love with all-day wireless Powerbeats3 Earphones',
+         tagLine: 'Stay connected to the world you love',
          name: 'Powerbeats3 Wireless Earphones',
          image: '/images/earphones/ep1.png',
          description: [
@@ -13,6 +13,7 @@ const products = [
                ],
          brands: 'Beats By Dre',
          category: 'Earphones',
+         isFeatured: true,
          price: 129.99,
          countInStock: 10,
          rating: 4.2,
@@ -26,14 +27,15 @@ const products = [
          name: 'Beats Studio Buds',
          image: '/images/earphones/ep2.png',
          description: [
+               'High-quality call performance and voice assistant interaction via built-in microphones.',
                'Control your sound with two distinct listening modes: Active Noise Cancelling (ANC) and Transparency mode.', 
                'Select one of the three soft, silicone eartips. These options provide comfort, stability, and the confidence of staying put.',
                'Up to 8 hours of listening time1 (up to 24 hours combined with pocket-sized charging case).',
-               'High-quality call performance and voice assistant interaction via built-in microphones.'
                ],
          brands: 'Beats By Dre',
          category: 'Earphones',
          price: 149.99,
+         isFeatured: false,
          countInStock: 15,
          rating: 4.5,
          numReviews: 30,
@@ -46,8 +48,8 @@ const products = [
          name: 'Beats Fit Pro',
          image: '/images/earphones/ep3.png',
          description: [
-               'Beats Fit Pro is equipped with comfortable, secure-fit wingtips that flex to fit your ear. The universal wingtip design was put to the ultimate test by athletes of all kinds so you can trust these earbuds will stay put through work days and workouts.', 
                'For a comfortable, secure fit, gently twist earbud back and tuck wingtip into upper ear.',
+               'Beats Fit Pro is equipped with comfortable, secure-fit wingtips that flex to fit your ear. The universal wingtip design was put to the ultimate test by athletes of all kinds so you can trust these earbuds will stay put through work days and workouts.', 
                'Beats Fit Pro supports Spatial Audio with dynamic head tracking for immersive music, movies, and games. Dynamic head tracking uses gyroscopes and accelerometers to adjust the sound as you turn your head, for a multi-dimensional experience that makes you feel like you are inside of it.',
                `On-device controls allow you to manage music, toggle listening modes as well as take calls and activate voice assistant using the 'b' button.`
                ],
@@ -55,6 +57,7 @@ const products = [
          category: 'Earphones',
          price: 185.00,
          countInStock: 5,
+         isFeatured: true,
          rating: 5.0,
          numReviews: 10,
          color: 'black' 
@@ -66,14 +69,15 @@ const products = [
          name: 'PowerBeats Pro',
          image: '/images/earphones/ep4.png',
          description: [
+               `Each earbud has full volume and track controls, so you don't need your device to adjust your music.`,
                'Powered by the Apple H1 headphone chip and with Class 1 Bluetooth® technology, these wireless earbuds offer extended range and fewer dropouts, so they stay connected as you keep moving.', 
                'Each earbud has up to 9 hours of listening time, so you can keep your music going. With the charging case, you will get more than 24 hours of combined playback.',
                'With Audio Sharing, you can pair two sets of Beats headphones or AirPods to one iPhone and enjoy the same song, podcast, or movie along with a friend.',
-               `Each earbud has full volume and track controls, so you don't need your device to adjust your music.`
                ],
          brands: 'Beats By Dre',
          category: 'Earphones',
          price: 199.95,
+         isFeatured: false,
          countInStock: 7,
          rating: 4.0,
          numReviews: 25,
@@ -97,6 +101,7 @@ const products = [
          category: 'Headphones',
          price: 259.99,
          countInStock: 5,
+         isFeatured: false,
          rating: 4.0,
          numReviews: 7,
          color: 'black' 
@@ -108,14 +113,15 @@ const products = [
          name: 'JBL Tune 510BT',
          image: '/images/headphones/hp2.png',
          description: [
-               'It features the renowned JBL Pure Bass sound, which can be found in the most famous venues all around the world.', 
                'Wirelessly stream high-quality sound from your smartphone without messy cords.',
+               'It features the renowned JBL Pure Bass sound, which can be found in the most famous venues all around the world.', 
                'For long-lasting fun, listen wirelessly for 40 hours and recharge the battery in as little as 2 hours with the convenient Type-C USB cable. A quick 5-minute recharge gives you 2 additional hours of music.',
                'The JBL Tune 510BT headphones are a grab n go solution that helps you to inject music into every aspect of your busy life.'
                ],
          brands: 'JBL',
          category: 'Headphones',
          price: 49.95,
+         isFeatured: true,
          countInStock: 12,
          rating: 4.1,
          numReviews: 22,
@@ -128,14 +134,15 @@ const products = [
          name: 'Beats Solo3 Wireless',
          image: '/images/headphones/hp3.png',
          description: [
-               'Support Spatial Audio for immersive music, movies, and games - delivering a surround sound experience that you can take with you anywhere.', 
                'Delivers premium playback with fine-tuned acoustics that maximize clarity breadth, and balance.',
+               'Support Spatial Audio for immersive music, movies, and games - delivering a surround sound experience that you can take with you anywhere.', 
                'With Fast Fuel, a quick 5-minute charge provides 3 hours of playback.',
                'The on-ear, cushioned ear cups are adjustable, so you can customize your fit for all-day listening comfort.'
                ],
          brands: 'Beats By Dre',
          category: 'Headphones',
          price: 180.95,
+         isFeatured: false,
          countInStock: 11,
          rating: 3.5,
          numReviews: 8,
@@ -148,14 +155,15 @@ const products = [
          name: 'Beats Studio3 Wireless',
          image: '/images/headphones/hp4.png',
          description: [
-               'The Apple W1 headphone chip brings seamless setup and switching for your Apple devices§, so you can easily move about, keep the music going, and stay productive all day.', 
                'Are engineered for all-day comfort. The holistic design is lightweight, durable, and comfortable, so you can get lost in your music.',
+               'The Apple W1 headphone chip brings seamless setup and switching for your Apple devices§, so you can easily move about, keep the music going, and stay productive all day.', 
                'Easily connect to Android devices via Bluetooth® right out of the box.',
                'With Fast Fuel, a quick 10-minute charge provides 3 hours of playback.'
                ],
          brands: 'Beats By Dre',
          category: 'Headphones',
          price: 245.95,
+         isFeatured: true,
          countInStock: 10,
          rating: 5.0,
          numReviews: 10,
@@ -168,14 +176,15 @@ const products = [
          name: 'Beats Studio3 Wireless',
          image: '/images/headphones/hp5.png',
          description: [
-               'The Apple W1 headphone chip brings seamless setup and switching for your Apple devices§, so you can easily move about, keep the music going, and stay productive all day.', 
                'Are engineered for all-day comfort. The holistic design is lightweight, durable, and comfortable, so you can get lost in your music.',
+               'The Apple W1 headphone chip brings seamless setup and switching for your Apple devices§, so you can easily move about, keep the music going, and stay productive all day.', 
                'Easily connect to Android devices via Bluetooth® right out of the box.',
                'With Fast Fuel, a quick 10-minute charge provides 3 hours of playback.'
                ],
          brands: 'Beats By Dre',
          category: 'Headphones',
          price: 245.95,
+         isFeatured: false,
          countInStock: 9,
          rating: 5.0,
          numReviews: 19,
@@ -188,15 +197,16 @@ const products = [
          name: 'JBL Everest 700',
          image: '/images/headphones/hp6.png',
          description: [
+               'Best-in-class Ergonomics, designed to fit the unique contour of your ears',
                'Legendary JBL Pro Audio Sound, enjoy the same elevated experience and incredible sound JBL has been delivering to concert hall', 
                'With a rechargeable battery offering 25 hours of performance and ShareMe 2.0 to wirelessly share music, videos and games, now you can dance alone or with a partner free from limits.',
                'A built-in microphone also allows for easy call access.',
-               'Best-in-class Ergonomics, designed to fit the unique contour of your ears'
                ],
          brands: 'JBL',
          category: 'Headphones',
          price: 169.95,
          countInStock: 5,
+         isFeatured: true,
          rating: 3.9,
          numReviews: 20,
          color: 'black' 
@@ -218,6 +228,7 @@ const products = [
          brands: 'JBL',
          category: 'Speakers',
          price: 99.95,
+         isFeatured: true,
          countInStock: 15,
          rating: 4.6,
          numReviews: 25,
@@ -230,14 +241,15 @@ const products = [
          name: 'JBL Pulse 3',
          image: '/images/speakers/sp2.png',
          description: [
-               'Wirelessly connect up to 2 smartphones or tablets and take turns playing music with exceptional 360° sound.', 
                'The built-in rechargeable Li-ion battery provides up to 12 hours of playtime with music and light show.',
+               'Wirelessly connect up to 2 smartphones or tablets and take turns playing music with exceptional 360° sound.', 
                `JBL Pulse 3's customizable 360° lightshow sets the atmosphere by bringing your favorite songs to life.`,
                'Customize your lightshow experience at the tip of your fingers with the JBL Connect app.'
                ],
          brands: 'JBL',
          category: 'Speakers',
          price: 199.95,
+         isFeatured: false,
          countInStock: 2,
          rating: 5.0,
          numReviews: 50,
@@ -258,6 +270,7 @@ const products = [
          brands: 'JBL',
          category: 'Speakers',
          price: 49.95,
+         isFeatured: true,
          countInStock: 8,
          rating: 3.5,
          numReviews: 10,
@@ -279,11 +292,27 @@ const products = [
          category: 'Speakers',
          price: 39.95,
          countInStock: 8,
+         isFeatured: false,
          rating: 4.3,
          numReviews: 10,
          color: 'teal' 
       },
    ]}
 ]
-   
+
+const featureArr = []
+
+for(let i = 0; i < products.length; i++){
+   const category = products[i]
+   const key = Object.keys(category);
+
+   category[key].map(item => {
+      if(item.isFeatured){
+         featureArr.push(item)
+      }
+   })
+}
+
+console.log(featureArr);
+
 export default products
