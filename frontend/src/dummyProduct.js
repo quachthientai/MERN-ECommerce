@@ -83,7 +83,8 @@ const products = [
          numReviews: 25,
          color: 'navy' 
       }
-   ]},
+   ]
+   },
 
    {"Headphones": [
       {
@@ -210,8 +211,9 @@ const products = [
          rating: 3.9,
          numReviews: 20,
          color: 'black' 
-      },
-   ]},
+      }
+      ]
+   },
 
    {"Speakers": [
       {
@@ -296,8 +298,21 @@ const products = [
          rating: 4.3,
          numReviews: 10,
          color: 'teal' 
-      },
-   ]}
+      }
+      ]
+   }
 ]
 
-export default products
+const categories = [
+   {"Earphones": '/images/earphones/epcollection.png'
+   },
+   {"Headphones": '/images/headphones/hpcollection.png'
+   },
+   {"Speakers": '/images/speakers/spcollection.png'
+   }
+]
+
+
+
+export { products, categories}
+

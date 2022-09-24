@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Carousel, Button } from 'react-bootstrap'
-import products from '../dummyProduct.js'
+import {products} from '../dummyProduct.js'
 
 
 const Jumbotron = () => {

@@ -3,6 +3,7 @@ import Header from './Components/Header.js'
 import Footer from './Components/Footer.js';
 import Jumbotron from './Components/Jumbotron.js';
 import HomeScreen from './Screen/HomeScreen.js';
+import Categories from './Components/Categories.js';
 import './index.css';
 import './bootstrap.min.css'
 import { Container } from 'react-bootstrap'
@@ -12,7 +13,7 @@ function App() {
     <>
       <Header/>
       <main>
-        <Container  >
+        <Container>
           <Jumbotron />
           <HomeScreen />
         </Container>
