@@ -16,7 +16,7 @@ const products = [
          isFeatured: true,
          price: 129.99,
          countInStock: 10,
-         rating: 4.2,
+         rating: 4.0,
          numReviews: 20,
          color: 'black' 
       },
@@ -35,7 +35,7 @@ const products = [
          brands: 'Beats By Dre',
          category: 'Earphones',
          price: 149.99,
-         isFeatured: false,
+         isFeatured: true,
          countInStock: 15,
          rating: 4.5,
          numReviews: 30,
@@ -77,9 +77,9 @@ const products = [
          brands: 'Beats By Dre',
          category: 'Earphones',
          price: 199.95,
-         isFeatured: false,
+         isFeatured: true,
          countInStock: 7,
-         rating: 4.0,
+         rating: 3.5,
          numReviews: 25,
          color: 'navy' 
       }
@@ -102,7 +102,7 @@ const products = [
          category: 'Headphones',
          price: 259.99,
          countInStock: 5,
-         isFeatured: false,
+         isFeatured: true,
          rating: 4.0,
          numReviews: 7,
          color: 'black' 
@@ -124,7 +124,7 @@ const products = [
          price: 49.95,
          isFeatured: true,
          countInStock: 12,
-         rating: 4.1,
+         rating: 4.5,
          numReviews: 22,
          color: 'blue' 
       },
@@ -143,7 +143,7 @@ const products = [
          brands: 'Beats By Dre',
          category: 'Headphones',
          price: 180.95,
-         isFeatured: false,
+         isFeatured: true,
          countInStock: 11,
          rating: 3.5,
          numReviews: 8,
@@ -185,7 +185,7 @@ const products = [
          brands: 'Beats By Dre',
          category: 'Headphones',
          price: 245.95,
-         isFeatured: false,
+         isFeatured: true,
          countInStock: 9,
          rating: 5.0,
          numReviews: 19,
@@ -208,7 +208,7 @@ const products = [
          price: 169.95,
          countInStock: 5,
          isFeatured: true,
-         rating: 3.9,
+         rating: 4.0,
          numReviews: 20,
          color: 'black' 
       }
@@ -232,7 +232,7 @@ const products = [
          price: 99.95,
          isFeatured: true,
          countInStock: 15,
-         rating: 4.6,
+         rating: 4.5,
          numReviews: 25,
          color: 'blue' 
       },
@@ -251,7 +251,7 @@ const products = [
          brands: 'JBL',
          category: 'Speakers',
          price: 199.95,
-         isFeatured: false,
+         isFeatured: true,
          countInStock: 2,
          rating: 5.0,
          numReviews: 50,
@@ -294,8 +294,8 @@ const products = [
          category: 'Speakers',
          price: 39.95,
          countInStock: 8,
-         isFeatured: false,
-         rating: 4.3,
+         isFeatured: true,
+         rating: 4.0,
          numReviews: 10,
          color: 'teal' 
       }

@@ -18,8 +18,6 @@ const HomeScreen = () => {
     })
   }
 
-
-
   return (
     <>
       <div className="mb-5" >
@@ -52,7 +50,6 @@ const HomeScreen = () => {
           })}
         </Row>
       </div>
-
     </>
   )
 }

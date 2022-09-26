@@ -2,6 +2,8 @@ main{
    min-height: 90vh;
 }
 
+
+
 /* header{
    position: sticky;
    top: 0;
@@ -25,6 +27,50 @@ h1,h2,h3,h4,h5, .text{
 .product-card{
    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 }
+
+/* @media screen and (max-width: 768px){
+   .carousel-img {
+      height: 35vh;
+      margin: 0 auto;
+   }
+
+   .carousel-item{
+      height: 68vh;
+      display: flex;
+      align-items: center;
+   }
+
+   .carousel-btn{
+      font-size: 10px;
+   }
+
+   .caption-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 75%;
+      height: 30vh;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .carousel-name{
+      font-size: 17px;
+   }
+
+   .carousel-tagline{
+      font-size: 15px;
+   }
+
+   .carousel-desc{
+      font-size: 12px;
+   }
+} */
+
+
+
    
+
 
 

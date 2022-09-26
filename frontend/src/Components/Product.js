@@ -1,4 +1,5 @@
 import React from 'react'
+import Rating from './Rating.js'
 import { Card, CardImg, Button } from 'react-bootstrap'
 
 export const Product = (props) => {
@@ -17,11 +18,14 @@ export const Product = (props) => {
 
          <a href={`/product/${props.product.id}`}>
             <Card.Body>
-               <Card.Title as="h5" className="mx-auto d-flex align-items-center" style={{height:"40px"}}>
+               <Card.Title as="h5" className="mx-auto d-flex align-items-center" style={{height:"50px"}}>
                   {props.product.name}
                </Card.Title>
-               <Card.Text as="div"><small>{`${props.product.rating} from ${props.product.numReviews}`}</small></Card.Text>
-               <Card.Text as="h3" className="my-3">{`$${props.product.price}`}</Card.Text>
+               <Rating 
+                  ratingStats={props.product.rating}
+                  reviewStats={props.product.numReviews}
+                  ratingColor={"#FDCC0D"}/>
+               <Card.Text as="h3" className="mt-1 mb-3">{`$${props.product.price}`}</Card.Text>
                <Button variant="dark" className="fs-6 px-3 py-2 rounded" style={{margin:"0 auto"}}>ADD TO CART</Button>
             </Card.Body>
          </a>
