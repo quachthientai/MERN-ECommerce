@@ -30,8 +30,8 @@ const HomeScreen = () => {
               <Col className="my-2" md={6} lg={4}>
                 <Categories
                   key={name}
-                  img={img}
-                  name={name}/>
+                  categoryImg={img}
+                  categoryName={name}/>
               </Col>
             )
           })}

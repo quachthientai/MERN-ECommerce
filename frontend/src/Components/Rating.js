@@ -84,7 +84,7 @@ const Rating = (props) => {
 Rating.propTypes = {
    ratingStats: PropTypes.number.isRequired,
    reviewStats: PropTypes.string.isRequired,
-
+   ratingColor: PropTypes.string.isRequired,
 }
 
 export default Rating

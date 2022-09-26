@@ -1,5 +1,6 @@
 import React from 'react'
 import Rating from './Rating.js'
+import PropTypes from 'prop-types'
 import { Card, CardImg, Button } from 'react-bootstrap'
 
 export const Product = (props) => {
@@ -21,10 +22,13 @@ export const Product = (props) => {
                <Card.Title as="h5" className="mx-auto d-flex align-items-center" style={{height:"50px"}}>
                   {props.product.name}
                </Card.Title>
+
                <Rating 
                   ratingStats={props.product.rating}
                   reviewStats={props.product.numReviews}
-                  ratingColor={"#FDCC0D"}/>
+                  ratingColor={"#FDCC0D"}
+               />
+                  
                <Card.Text as="h3" className="mt-1 mb-3">{`$${props.product.price}`}</Card.Text>
                <Button variant="dark" className="fs-6 px-3 py-2 rounded" style={{margin:"0 auto"}}>ADD TO CART</Button>
             </Card.Body>
@@ -35,4 +39,8 @@ export const Product = (props) => {
       </Card>
     </>
   )
+}
+
+Product.propTypes = {
+   product: PropTypes.object.isRequired
 }

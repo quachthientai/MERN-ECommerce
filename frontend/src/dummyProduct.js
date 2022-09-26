@@ -187,7 +187,7 @@ const products = [
          price: 245.95,
          isFeatured: true,
          countInStock: 9,
-         rating: 5.0,
+         rating: 3.5,
          numReviews: 19,
          color: 'white' 
       },
@@ -253,7 +253,7 @@ const products = [
          price: 199.95,
          isFeatured: true,
          countInStock: 2,
-         rating: 5.0,
+         rating: 2.0,
          numReviews: 50,
          color: 'multicolor' 
       },
@@ -295,7 +295,7 @@ const products = [
          price: 39.95,
          countInStock: 8,
          isFeatured: true,
-         rating: 4.0,
+         rating: 3.0,
          numReviews: 10,
          color: 'teal' 
       }
