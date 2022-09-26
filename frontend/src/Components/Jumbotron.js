@@ -14,7 +14,7 @@ const Jumbotron = () => {
        <Carousel variant="dark" bg="dark" indicators={false} interval={null} >
          {randCarouselCategory[key].map(product => {
             return (
-               <Carousel.Item>
+               <Carousel.Item key={product.id}>
                   <div>
                      <img
                         className="carousel-img img-fluid w-50 float-end"

@@ -27,9 +27,8 @@ const HomeScreen = () => {
             const name = Object.keys(category)
             const img = Object.values(category)
             return(
-              <Col className="my-2" md={6} lg={4}>
+              <Col key={name} className="my-2" md={6} lg={4}>
                 <Categories
-                  key={name}
                   categoryImg={img}
                   categoryName={name}/>
               </Col>
@@ -43,7 +42,7 @@ const HomeScreen = () => {
         <Row>
           {featureArr.map(product => {
             return(
-              <Col className="my-2" sm={12} md={6} lg={4}>
+              <Col key={product.id} className="my-2" sm={12} md={6} lg={4}>
                 <Product product={product}/>
               </Col>
             )

@@ -33,9 +33,6 @@ export const Product = (props) => {
                <Button variant="dark" className="fs-6 px-3 py-2 rounded" style={{margin:"0 auto"}}>ADD TO CART</Button>
             </Card.Body>
          </a>
-         
-            
-         
       </Card>
     </>
   )

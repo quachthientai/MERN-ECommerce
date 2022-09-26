@@ -29,9 +29,8 @@ const Categories = (props) => {
 }
 
 Categories.propTypes = {
-   key : PropTypes.string.isRequired,
-   img : PropTypes.string.isRequired,
-   name : PropTypes.string.isRequired
+   categoryImg : PropTypes.array.isRequired,
+   categoryName : PropTypes.array.isRequired
 }
 
 export default Categories
