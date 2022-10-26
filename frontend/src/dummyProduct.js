@@ -16,7 +16,7 @@ const products = [
          isFeatured: true,
          price: 129.99,
          countInStock: 10,
-         rating: 4.0,
+         rating: 3.5,
          numReviews: 20,
          color: 'black' 
       },
@@ -213,6 +213,7 @@ const products = [
          color: 'black' 
       }
       ]
+   
    },
 
    {"Speakers": [
@@ -298,9 +299,11 @@ const products = [
          rating: 3.0,
          numReviews: 10,
          color: 'teal' 
-      }
+      },
+      
       ]
    }
+   
 ]
 
 const categories = [
@@ -311,6 +314,8 @@ const categories = [
    {"Speakers": '/images/speakers/spcollection.png'
    }
 ]
+
+
 
 
 
