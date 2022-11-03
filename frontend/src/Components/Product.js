@@ -1,7 +1,7 @@
 import React from "react";
 import Rating from "./Rating.js";
 import PropTypes from "prop-types";
-import {Card, CardImg, Button} from "react-bootstrap";
+import {Card, CardImg} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 export const Product = (props) => {
@@ -13,7 +13,9 @@ export const Product = (props) => {
             {props.product.category}
           </span>
           <div className="text-center">
-            <Link to={`/product/${props.product.category}/${props.product.id}`}>
+            <Link
+              to={`/products/${props.product.category}/${props.product.id}`}
+            >
               <CardImg
                 variant="top"
                 className="w-75 rounded thumbnail-image"
@@ -23,7 +25,7 @@ export const Product = (props) => {
           </div>
         </Card.Header>
 
-        <Link to={`/product/${props.product.category}/${props.product.id}`}>
+        <Link to={`/products/${props.product.category}/${props.product.id}`}>
           <Card.Body>
             <Card.Title
               as="h5"
@@ -43,7 +45,6 @@ export const Product = (props) => {
               as="h3"
               className="my-3"
             >{`$${props.product.price}`}</Card.Text>
-            
           </Card.Body>
         </Link>
       </Card>

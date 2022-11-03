@@ -1,35 +1,34 @@
-import React from "react";
+import axios from "axios";
+import React, {useState, useEffect} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import {useParams} from "react-router-dom";
-import { Product } from "../Components/Product.js";
-import {products} from "../dummyProduct.js"
+import {Product} from "../Components/Product.js";
 
 function CategoryShopScreen() {
   const {category} = useParams();
-  let categoryArr;
+  const [productsCategory, setProductsCategory] = useState([]);
 
-  for (let i = 0; i < products.length; i++) {
-    const temp = Object.keys(products[i]);
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
-    for (const [key, value] of Object.entries(products[i])) {
-      if (key === temp.toString() && key === category) {
-        categoryArr = value;
-        break;
-      }
-    }
-  }
-  
+  const fetchProducts = async () => {
+    const res = await axios.get(`/api/products/${category}`);
+    setProductsCategory(res.data);
+  };
+
   return (
     <Container className="mb-5 mt-4">
       <h1 className="text-center mx-2 py-4">{category} Products</h1>
       <Row>
-        {categoryArr.map((product) => {
-          return (
-            <Col key={product.id} className="my-2" sm={12} md={6} lg={4}>
-              <Product product={product} />
-            </Col>
-          )
-        })}
+        {productsCategory &&
+          productsCategory.map((product) => {
+            return (
+              <Col key={product.id} className="my-2" sm={12} md={6} lg={4}>
+                <Product product={product} />
+              </Col>
+            );
+          })}
       </Row>
     </Container>
   );

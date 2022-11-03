@@ -1,18 +1,23 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
+import axios from "axios";
 import {Carousel, Button} from "react-bootstrap";
-import {products} from "../dummyProduct.js";
 
-const Jumbotron = () => {
-  //get the random category to display the product on jumbotron
-  const randCarouselCategory =
-    products[Math.floor(Math.random() * products.length)];
-  const key = Object.keys(randCarouselCategory);
+const Jumbotron = (props) => {
+  const [productsCategory, setProductsCategory] = useState([])
 
+  useEffect(() => {
+    fetchProducts()
+  },[])
+  
+  const fetchProducts = async () => {
+    const res = await axios.get(`/api/products/${props.rand}`)
+    setProductsCategory(res.data)
+  }
   
   return (
     <Carousel variant="dark" bg="dark" interval={3000}>
-      {randCarouselCategory[key].map((product) => {
+      {productsCategory && productsCategory.map((product) => {
         return (
           <Carousel.Item key={product.id}>
             <div>

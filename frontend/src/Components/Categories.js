@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { Row, Col, Card, Button, CardImg } from 'react-bootstrap'
+import { Row, Col, Card, Button } from 'react-bootstrap'
 
 
 const Categories = (props) => {
@@ -13,7 +13,7 @@ const Categories = (props) => {
                <Col className="d-flex align-items-center m-lg-0 m-md-0 m-sm-3">
                   <div >
                      <Card.Title className="text-uppercase" as="p" >{props.categoryName}</Card.Title>
-                     <Link to={`product/${props.categoryName}`}>
+                     <Link to={`/products/${props.categoryName}`}>
                         <Button variant="dark" size='sm' >SHOP NOW</Button>
                      </Link>
                   </div>
@@ -21,7 +21,7 @@ const Categories = (props) => {
 
                <Col>
                   <div  style={{ height:"10vh" ,float:"right"}}>
-                     <img  className="m-md-0 m-lg-0 m-sm-3" style={{ maxHeight:"100%", maxWidth:"100%"}} src={props.categoryImg}/>
+                     <img className="m-md-0 m-lg-0 m-sm-3" alt="productCard" style={{ maxHeight:"100%", maxWidth:"100%"}} src={props.categoryImg}/>
                   </div>
                </Col>
             </Row>

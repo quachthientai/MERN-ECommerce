@@ -1,26 +1,28 @@
 import React, {useState, useEffect} from "react";
 import {categories} from "../dummyProduct.js";
-import axios from 'axios';
+import axios from "axios";
 import Jumbotron from "../Components/Jumbotron.js";
 import {Row, Col, Container} from "react-bootstrap";
 import {Product} from "../Components/Product.js";
 import Categories from "../Components/Categories.js";
 
 const HomeScreen = () => {
-  const [products, setProducts] = useState([])
+  const randSeed = Math.floor(Math.random() * Object.values(categories).length);
+  const randCategory = Object.keys(categories[randSeed]).toString();
+
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      const res = await axios.get('/api/products')
-      setProducts(res.data)
-    }
-    fetchProducts()
+    fetchProducts();
+  }, []);
 
-  },[])
+  const fetchProducts = async () => {
+    axios.get("/api/products").then((res) => {
+      setProducts(res.data);
+    });
+  };
 
-  console.log(products)
   const featureArr = [];
-
   for (let i = 0; i < products.length; i++) {
     const category = products[i];
     const key = Object.keys(category);
@@ -32,11 +34,10 @@ const HomeScreen = () => {
       return featureArr;
     });
   }
-  
-  
+
   return (
     <Container>
-      <Jumbotron />
+      <Jumbotron rand={randCategory} />
       <div className="mb-5">
         <h1 className="text-center mx-2 py-4">Shop by Category</h1>
         <Row>

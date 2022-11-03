@@ -7,7 +7,6 @@ import ProductScreen from "./Screen/ProductScreen.js";
 import {Router, Route, Routes} from "react-router-dom";
 import "./index.css";
 import "./bootstrap.min.css";
-import {Container, Row, Col} from "react-bootstrap";
 import AboutScreen from "./Screen/AboutScreen.js";
 import CategoryShopScreen from "./Screen/CategoryShopScreen.js";
 
@@ -18,8 +17,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomeScreen />} exact />
-        <Route path="/product/:category" element={<CategoryShopScreen />} />
-        <Route path="/product/:category/:id" element={<ProductScreen />}/>
+        <Route path="/products/:category" element={<CategoryShopScreen />} />
+        <Route path="/products/:category/:id" element={<ProductScreen />}/>
         <Route path="/contact" element={<ContactScreen />} />
         <Route path="/about" element={<AboutScreen/>} />
       </Routes>

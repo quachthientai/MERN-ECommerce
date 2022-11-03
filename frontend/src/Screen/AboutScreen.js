@@ -2,7 +2,7 @@ import React from "react";
 import jbl from "../assets/JBLart.jpg";
 import jbl2 from "../assets/JBLart2.jpg";
 import beats from "../assets/beatart.jpg";
-import {Row, Col, Form, Button, Container} from "react-bootstrap";
+import {Row, Col, Button, Container} from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function AboutScreen() {

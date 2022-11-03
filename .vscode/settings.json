@@ -1,0 +1,83 @@
+{
+   "workbench.iconTheme": "material-icon-theme",
+   "workbench.colorTheme": "SynthWave '84",
+   "editor.fontFamily": "Jet Brains Mono, Consolas, 'Courier New', monospace",
+   "editor.fontLigatures": true,
+   "powermode.enabled": true,
+   "NyanCat.backgroundColor": "transparent", // Nyan Cat area background color, default is transparent, it accepts any css color string.
+    "NyanCat.name": "bday",
+   "vscode-pets.theme": "forest",
+   "vscode-pets.petType": "cockatiel",
+   "vscode-pets.petSize": "medium",
+   "vscode-pets.petColor": "gray",
+   "recommendations": [
+       "tonybaloney.vscode-pets"
+   ],
+   "powermode.enableStatusBarComboTimer": false,
+   "prettier.bracketSpacing": false,
+   "editor.letterSpacing": 2,
+   "terminal.integrated.letterSpacing": 1,
+   "indentRainbow.colors": [
+       "rgba(38, 70, 83)",
+       "rgba(42, 157, 143)",
+       "rgba(233, 196, 106)",
+       "rgba(244, 162, 97)",
+       "rgba(231, 111, 81)"
+   ],
+   "liveServer.settings.donotShowInfoMsg": true,
+   "bracketPairColorizer.depreciation-notice": false,
+   "powermode.combo.location": "statusbar",
+   "powermode.combo.counterEnabled": "hide",
+   "powermode.combo.timerEnabled": "hide",
+   "powermode.shake.enabled": false,
+   "powermode.explosions.size": 3.5,
+   "powermode.explosions.offset": 0.2,
+   "editor.fontSize": 18,
+   "workbench.tree.indent": 5,
+   "editor.lineHeight": 2,
+   "editor.tabSize": 3,
+   "explorer.confirmDelete": false,
+   "[javascript]": {
+       "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "sync.gist": "9fa227dcafc24d20d0ef072b851b6e9e",
+   "[javascriptreact]": {
+       "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "debug.disassemblyView.showSourceCode": false,
+   "[html]": {
+       "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[css]": {
+       "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "auto-close-tag.activationOnLanguage": [
+       "xml",
+       "php",
+       "blade",
+       "ejs",
+       "jinja",
+       "javascript",
+       "javascriptreact",
+       "typescript",
+       "typescriptreact",
+       "plaintext",
+       "markdown",
+       "vue",
+       "liquid",
+       "erb",
+       "lang-cfml",
+       "cfml",
+       "HTML (EEx)",
+       "HTML (Eex)",
+       "plist"
+   ],
+   
+   "window.zoomLevel": 0,
+   "auto-close-tag.disableOnLanguage": [
+   
+   ],
+   
+
+   
+}
