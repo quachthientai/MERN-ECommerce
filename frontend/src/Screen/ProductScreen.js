@@ -22,7 +22,7 @@ function ProductScreen() {
   };
 
   return (
-    <Container className="mt-4">
+    <Container className="my-4" >
       <Link className="btn btn-light mb-3" to="/">
         Go back
       </Link>

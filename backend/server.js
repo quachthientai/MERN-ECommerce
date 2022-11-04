@@ -1,5 +1,12 @@
 import express from "express";
 import {products} from "./data/dummyProduct.js";
+import dotenv from "dotenv";
+import connectDB from "./config/db.js";
+import colors from "colors";
+
+dotenv.config();
+
+connectDB();
 const app = express();
 
 app.get("/", (req, res) => {
@@ -27,12 +34,12 @@ app.get("/api/products/:category", (req, res) => {
   }
 
   res.json(categoryArr);
-})
+});
 
 app.get("/api/products/:category/:id", (req, res) => {
   const {category, id} = req.params;
   let categoryArr;
-  
+
   for (let i = 0; i < products.length; i++) {
     const temp = Object.keys(products[i]);
 
@@ -46,9 +53,12 @@ app.get("/api/products/:category/:id", (req, res) => {
 
   const product = categoryArr.find((p) => p.id === id);
   res.json(product);
-  
 });
 
-
-
-app.listen(5000, console.log("Server running on port 5000"));
+const PORT = process.env.PORT || 5000;
+app.listen(
+  PORT,
+  console.log(
+    `Server running in ${process.env.NODE_ENV} mode on ${PORT}`.yellow.bold
+  )
+);
