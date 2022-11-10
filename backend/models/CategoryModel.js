@@ -5,7 +5,7 @@ const {Schema} = mongoose;
 const categorySchema = new Schema(
   {
     name: {type: String, required: true},
-    products: [{type: String}],
+    products: [{type: mongoose.Schema.Types.ObjectId}],
   },
   {timestamps: true}
 );

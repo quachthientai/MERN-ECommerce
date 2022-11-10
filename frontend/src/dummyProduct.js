@@ -1,7 +1,6 @@
 const products = [
    {"earphones": [
-      {
-         id: 'ep1',
+      {  
          tagLine: 'Stay connected to the world you love',
          name: 'Powerbeats3 Wireless Earphones',
          image: ['/images/earphones/ep1.png','/images/earphones/ep1card.png'],
@@ -22,7 +21,7 @@ const products = [
       },
 
       {
-         id: 'ep2',
+         
          tagLine: 'True Wireless Noise Cancelling Earbuds',
          name: 'Beats Studio Buds',
          image: ['/images/earphones/ep2.png','/images/earphones/ep2card.png'],
@@ -43,7 +42,7 @@ const products = [
       },
 
       {
-         id: 'ep3',
+        
          tagLine: 'True Wireless Noise Cancelling Earbuds',
          name: 'Beats Fit Pro',
          image: ['/images/earphones/ep3.png','/images/earphones/ep3card.png'],
@@ -64,7 +63,7 @@ const products = [
       },
 
       {
-         id: 'ep4',
+         
          tagLine: 'True Wireless High-Performance Earbuds',
          name: 'PowerBeats Pro',
          image: ['/images/earphones/ep4.png','/images/earphones/ep4card.png'],
@@ -88,7 +87,7 @@ const products = [
 
    {"headphones": [
       {
-         id: 'hp1',
+         
          tagLine: 'Feel the bass in your bones',
          name: 'Monster Beats Pro',
          image: ['/images/headphones/hp1.png','/images/headphones/hp1card.png'],
@@ -109,7 +108,7 @@ const products = [
       },
 
       {
-         id: 'hp2',
+         
          tagLine: 'Dance your heart out to the beats',
          name: 'JBL Tune 510BT',
          image: ['/images/headphones/hp2.png','/images/headphones/hp2card.png'],
@@ -130,7 +129,7 @@ const products = [
       },
 
       {
-         id: 'hp3',
+         
          tagLine: 'True Wireless On-Ear Headphones',
          name: 'Beats Solo3 Wireless',
          image: ['/images/headphones/hp3.png','/images/headphones/hp3card.png'],
@@ -151,7 +150,7 @@ const products = [
       },
 
       {
-         id: 'hp4',
+         
          tagLine: 'True Wireless Noise Cancelling Over-Ear Headphones',
          name: 'Beats Studio3 Wireless',
          image: ['/images/headphones/hp4.png','/images/headphones/hp4card.png'],
@@ -172,7 +171,7 @@ const products = [
       },
 
       {
-         id: 'hp5',
+         
          tagLine: 'True Wireless Noise Cancelling Over-Ear Headphones',
          name: 'Beats Studio3 Wireless',
          image: ['/images/headphones/hp5.png','/images/headphones/hp5card.png'],
@@ -193,7 +192,7 @@ const products = [
       },
 
       {
-         id: 'hp6',
+         
          tagLine: 'Wake up and listen',
          name: 'JBL Everest 700',
          image: ['/images/headphones/hp6.png','/images/headphones/hp6card.png'],
@@ -218,7 +217,7 @@ const products = [
 
    {"speakers": [
       {
-         id: 'sp1',
+        
          tagLine: 'Sounds better than ever',
          name: 'JBL Flip 5 Eco Edition',
          image: ['/images/speakers/sp1.png','/images/speakers/sp1card.png'],
@@ -239,7 +238,7 @@ const products = [
       },
 
       {
-         id: 'sp2',
+         
          tagLine: 'Light up the night',
          name: 'JBL Pulse 3',
          image: ['/images/speakers/sp2.png','/images/speakers/sp2card.png'],
@@ -260,7 +259,7 @@ const products = [
       },
 
       {
-         id: 'sp3',
+         
          tagLine: 'Wireless Bluetooth® Streaming',
          name: 'JBL Go 2',
          image: ['/images/speakers/sp3.png','/images/speakers/sp3card.png'],
@@ -281,7 +280,7 @@ const products = [
       },
 
       {
-         id: 'sp4',
+         
          tagLine: 'Wireless Bluetooth® Streaming',
          name: 'JBL Clip 3',
          image: ['/images/speakers/sp4.png','/images/speakers/sp4card.png'],

@@ -4,7 +4,7 @@ import Footer from "./Components/Footer.js";
 import HomeScreen from "./Screen/HomeScreen.js";
 import ContactScreen from "./Screen/ContactScreen.js";
 import ProductScreen from "./Screen/ProductScreen.js";
-import {Router, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import "./index.css";
 import "./bootstrap.min.css";
 import AboutScreen from "./Screen/AboutScreen.js";

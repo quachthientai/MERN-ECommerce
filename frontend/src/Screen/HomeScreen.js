@@ -23,18 +23,14 @@ const HomeScreen = () => {
   };
 
   const featureArr = [];
-  for (let i = 0; i < products.length; i++) {
-    const category = products[i];
-    const key = Object.keys(category);
-
-    category[key].map((item) => {
-      if (item.isFeatured) {
-        featureArr.push(item);
+  Object.values(products).forEach((p) => {
+    for(let i = 0; i < p.length; i++){
+      if(p[i].isFeatured){
+        featureArr.push(p[i])
       }
-      return featureArr;
-    });
-  }
-
+    }
+  })
+  
   return (
     <Container>
       <Jumbotron rand={randCategory} />
@@ -62,6 +58,18 @@ const HomeScreen = () => {
                 <Product product={product} />
               </Col>
             );
+          })}
+          {Object.values(products).forEach((p) => {
+            for(let i = 0; i < p.length; i++ ){
+              if(p[i].isFeatured){
+                // return (
+                //   <Col key={p[i].id} className="my-2" sm={12} md={6} lg={4}>
+                //     <Product product={p[i]} />
+                //   </Col>
+                // )
+                console.log(p[i])
+              }
+            }
           })}
         </Row>
       </div>

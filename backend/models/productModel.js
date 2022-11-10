@@ -24,31 +24,27 @@ const productSchema = new Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      required: true,
+      required: false,
       ref: "User",
+    },
+    tagLine: {
+      type: String,
+      required: true,
     },
     name: {
       type: String,
       required: true,
     },
-    image: [{type: String}],
-    tagline: {
-      type: String,
-      required: true,
-    },
-    description: [{type: String}],
+    image: [{type: String, required: true}],
+    description: [{type: String, required: true}],
     brands: {
       type: String,
       required: true,
     },
     category: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: true,
+      type: mongoose.Schema.Types.String,
+      required: false,
       ref: "Category",
-    },
-    color: {
-      type: String,
-      required: true,
     },
     isFeatured: {
       type: Boolean,
@@ -56,6 +52,11 @@ const productSchema = new Schema(
       default: false,
     },
     price: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    countInStock: {
       type: Number,
       required: true,
       default: 0,
@@ -70,10 +71,9 @@ const productSchema = new Schema(
       required: true,
       default: 0,
     },
-    countInStock: {
-      type: Number,
+    color: {
+      type: String,
       required: true,
-      default: 0,
     },
     review: [reviewSchema],
   },
